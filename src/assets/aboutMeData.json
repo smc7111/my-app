@@ -1,0 +1,20 @@
+{
+    "experience": [
+      {
+        "role": "Product Designer",
+        "company": "Company A",
+        "duration": "Jan 2020 - Present",
+        "description": "Brief description of your role and responsibilities."
+      }
+   
+    ],
+    "education": [
+      {
+        "degree": "Master's in UX Design",
+        "institution": "Kent State University",
+        "duration": "2022 - Present",
+        "description": "Brief description of your studies and achievements."
+      }
+    ]
+  }
+  

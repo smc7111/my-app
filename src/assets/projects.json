@@ -1,0 +1,23 @@
+
+[
+    {
+      "id": 1,
+      "title": "Lifecycle",
+      "description": "This is a brief description of Project One. It showcases my skills in React and Chakra UI.",
+      "projectId": 1
+    },
+    {
+      "id": 2,
+      "title": "DPA App",
+      "description": "This project demonstrates advanced CSS techniques and responsive design principles.",
+      "projectId": 2
+    },
+    {
+      "id": 3,
+      "title": "Lifecycle Email",
+      "description": "An exploration of JavaScript frameworks, featuring Vue.js and Nuxt for server-side rendering.",
+      "projectId": 3
+    }
+   
+  ]
+  
