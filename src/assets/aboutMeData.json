@@ -1,10 +1,10 @@
 {
     "experience": [
       {
-        "role": "Product Designer",
-        "company": "Company A",
+        "role": "Partner Marketer",
+        "company": "McAfee",
         "duration": "Jan 2020 - Present",
-        "description": "Brief description of your role and responsibilities."
+        "description": "Empowering partners to effectively communicate with customers across multiple channels, driving enhanced engagement and product value, while also spearheading initiatives in McAfee's New Acquisition Channel."
       }
    
     ],
@@ -12,8 +12,13 @@
       {
         "degree": "Master's in UX Design",
         "institution": "Kent State University",
-        "duration": "2022 - Present",
-        "description": "Brief description of your studies and achievements."
+        "duration": "2022 - 2024"
+      },
+      {
+        "degree": "Bachelor's in Emerging Media and Communication",
+        "institution": "The University of Texas at Dallas",
+        "duration": "2016 - 2020"
+
       }
     ]
   }

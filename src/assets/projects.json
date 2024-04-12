@@ -1,22 +1,26 @@
 
 [
+    
     {
       "id": 1,
-      "title": "Lifecycle",
-      "description": "This is a brief description of Project One. It showcases my skills in React and Chakra UI.",
-      "projectId": 1
-    },
+      "title": "ConnectPaws Mobile App",
+      "description": "Addressing communication challenges within Dallas Pets Alive, this mobile app prototype for foster volunteers emphasizes user connections, resource-sharing, and event coordination. Iterative improvements, informed by peer feedback, position the project for future development.",
+      "projectId": 1,
+      "path": "/dpa"
+    },   
     {
       "id": 2,
-      "title": "DPA App",
-      "description": "This project demonstrates advanced CSS techniques and responsive design principles.",
-      "projectId": 2
+      "title": "Lifecycle Emails",
+      "description": "Crafting impactful communication within McAfee, I spearheaded the design and content creation for a series of five emails tailored to resonate with a new customer base. These emails were strategically crafted to empower employee benefits customers, encouraging active engagement with their latest security product while enhancing their perceived value of it.",
+      "projectId": 2,
+      "path": "/emails"
     },
     {
       "id": 3,
-      "title": "Lifecycle Email",
-      "description": "An exploration of JavaScript frameworks, featuring Vue.js and Nuxt for server-side rendering.",
-      "projectId": 3
+      "title": "Fandango App Research Analysis",
+      "description": "The usability study assessed the app's performance in facilitating common tasks like movie browsing and ticket purchasing. Through 12 moderated sessions, key issues were identified, including challenges with sorting functionality and accessing Coming Soon movies. Recommendations were made to improve these areas, aiming to enhance user experience and streamline the app's functionality.",
+      "projectId": 3,
+      "path": "/fandango"
     }
    
   ]
