@@ -1,0 +1,23 @@
+ [build]
+  publish = "build"
+  command = "npm install --legacy-peer-deps && npm run build -- --no-warnings"
+  environment = { CI = "false" }
+
+# Environment variables
+[context.production.environment]
+  SENDGRID_API_KEY = "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"
+  MAILCHIMP_API_KEY = "991931663c9caa790d2dae241850e1f1-us21"
+  mailchimpAudienceId = "649a1b66d1"
+  mailchimpOAuthToken = "089f82b709fac473992d3870ca29827c"
+  mailchimpContactStatus = "subscribed"
+  mailchimpMemberTags = '''{ "account_id": "string", "login_id": "string", "account_name": "string", "email": "string", "first_name": "string", "last_name": "string", "username": "freddie2000", "avatar_url": "string", "role": "string", "member_since": "2010-01-01T23:59:59+00:00", "pricing_plan_type": "monthly", "first_payment": "2010-01-01T23:59:59+00:00", "account_timezone": "string", "account_industry": "string", "contact": { "company": "string", "addr1": "string", "addr2": "string", "city": "string", "state": "string", "zip": "string", "country": "string" }, "pro_enabled": true, "last_login": "2019-08-24T14:15:22Z", "total_subscribers": 0, "industry_stats": { "open_rate": 0, "bounce_rate": 0, "click_rate": 0 }, "_links": [ { "rel": "string", "href": "string", "method": "GET", "targetSchema": "string", "schema": "string" } ] }'''
+  REACT_APP_API_URL = "http://localhost:8000"
+  REACT_APP_OPENAI_API_KEY = "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"
+  REACT_APP_API_KEY = "AIzaSyCikN-luXGLAppbM5QLY0cAW5P5L0gVc-A"
+  REACT_APP_AUTH_DOMAIN = "safehaven-80301.firebaseapp.com"
+  REACT_APP_DATABASE_URL = "https://safehaven-80301.firebaseio.com"
+  REACT_APP_PROJECT_ID = "safehaven-80301"
+  REACT_APP_STORAGE_BUCKET = "safehaven-80301.appspot.com"
+  REACT_APP_MESSAGING_SENDER_ID = "939525880896"
+  REACT_APP_APP_ID = "1:939525880896:web:72a187060a0209e7d073a5"
+  REACT_APP_MEASUREMENT_ID = "G-KTMPKH57NH"
