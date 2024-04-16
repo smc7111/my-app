@@ -2,10 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChakraProvider, Box, Text,  Button, Image, Flex,  IconButton,  useBreakpointValue, useColorModeValue, Divider, Link} from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon } from '@chakra-ui/icons';
-import Fandango from '../assets/Fandango clickable image 2.png';
-import EmailCycle from '../assets/LifecycleEmail.png';
 import projectsData from '../assets/projects.json';
 import DPAImage from '../assets/Email images/DPA clickable image.png';
+import LCM from '../assets/DPA images/Lifecycle email clickable image.png';
+import FandangoImage from '../assets/DPA images/Fandango clickable image 2.png';
 
 interface ProjectShowcaseProps {
   title: string;
@@ -48,8 +48,8 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
   // Using an object for imageMap instead of Map constructor for simplicity
   const imageMap: Record<number, string> = {
     1: DPAImage,
-    2: EmailCycle,
-    3: Fandango,
+    2: LCM,
+    3: FandangoImage,
   };
 
   const resolvedImageUrl = imageMap[projectId] || imageUrl;
