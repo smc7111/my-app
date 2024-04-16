@@ -112,8 +112,10 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
               rounded="lg"
               mb={5}
               mt={5}
+              onClick={handleViewProjectClick}
+              cursor="pointer"
             />
-            <Text maxW="600px" fontSize={descSize} mb={8} textColor="white">
+            <Text maxW="600px" fontSize="lg" mb={8} textColor="white">
               {description}
             </Text>
           </Box>

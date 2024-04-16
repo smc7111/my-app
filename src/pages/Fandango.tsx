@@ -6,9 +6,6 @@ import { useNavigate } from 'react-router-dom';
 
 // Import images
 import FandangoCoverPhoto from '../assets/Fandango images/Fandango Cover Photo.png';
-import PhoneImages from '../assets/DPA images/Phone images.png';
-import ActionImage from '../assets/DPA images/action section image.png';
-import Mountains from '../assets/DPA images/Mountains.png';
 import LCM from '../assets/DPA images/Lifecycle email clickable image.png';
 import DPAImage from '../assets/Email images/DPA clickable image.png';
 import PersonIcon from '../assets/Fandango images/Person icon.png';
@@ -102,7 +99,7 @@ function Fandango () {
               Fandango App Research Analysis
               </Text>
             
-              <Text>
+              <Text fontSize="lg">
               UX/UI Research   |   Usability Testing   |   Analysis
               </Text>
              
@@ -162,10 +159,11 @@ function Fandango () {
         </Box>
         <Box
         my={{sm: '-5' , md: '180'}}
+        paddingRight={{xl: '100'}}
         >
           <Text fontSize={responsiveFontSize} fontWeight="bold">Problem</Text>
           <Divider borderColor="white" my={2} />
-          <Text>
+          <Text fontSize="lg">
           Users face obstacles when using the Fandango app to access movie details and buy tickets, impeding their experience and potentially leading to frustration or app abandonment. The goal of this project was to assess the app's functionality in facilitating these tasks, aiming to identify usability issues and guide future improvements for a smoother user experience.          </Text>
         </Box>
       </Grid>
@@ -179,17 +177,18 @@ function Fandango () {
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
-      <Box order={{ md: 1 }}>
-        <Text fontSize={responsiveFontSize} fontWeight="bold">Actions</Text>
+      <Box order={{ md: 1 }}
+      paddingLeft={{xl: '100'}}>
+        <Text fontSize={responsiveFontSize} fontWeight="bold" >Actions</Text>
         <Divider borderColor="white" />
-        <Text>
+        <Text fontSize="lg">
         My team of five UX researchers, including myself, conducted <b>12 moderated usability studies</b> to assess user interactions with the Fandango app. We assigned participants <b>three typical tasks</b> mirroring real-world scenarios:
         </Text>
-            <Text my={'2'}> 1. Finding and filtering specific movie ratings and genres</Text>
-            <Text my={'2'}> 2. Locating a nearby theater and purchasing two tickets for a specific showing </Text>
-            <Text my={'2'}> 3. Exploring details about upcoming movies </Text>
+            <Text my={'2'} fontSize="lg"> 1. Finding and filtering specific movie ratings and genres</Text>
+            <Text my={'2'} fontSize="lg"> 2. Locating a nearby theater and purchasing two tickets for a specific showing </Text>
+            <Text my={'2'} fontSize="lg"> 3. Exploring details about upcoming movies </Text>
 
-            <Text> We recruited participants meeting specific criteria via email and text, ensuring a diverse and representative participant pool. Each session was moderated and recorded either in-person or virtually, with participants utilizing their mobile phones to replicate real-world usage scenarios. 
+            <Text fontSize="lg"> We recruited participants meeting specific criteria via email and text, ensuring a diverse and representative participant pool. Each session was moderated and recorded either in-person or virtually, with participants utilizing their mobile phones to replicate real-world usage scenarios. 
             </Text>
       </Box>
     </Grid>
@@ -210,23 +209,24 @@ function Fandango () {
       color="white"
       p={8}
       zIndex="1" // Ensure text content is above the image
+      paddingLeft={{xl: '120'}} paddingRight={{xl: '120'}}
     >
 
-      <Text fontSize={responsiveFontSize} fontWeight="bold">Results & Recommendations</Text>
+      <Text fontSize={responsiveFontSize} fontWeight="bold" >Results & Recommendations</Text>
         <Divider borderColor="white" my={2} />
-        <Text>
+        <Text fontSize="lg">
         Analysis of participant interactions revealed several key findings, which informed the following recommendations:
         </Text>
 
-        <Text my={'2'}>
+        <Text fontSize="lg" my={'2'} >
         <b>1. Sort Tool Enhancement:</b> Users encountered challenges with the Sort tool's inconsistent location and functionality across platforms. To address this, we recommend relocating the Sort function to a more intuitive location and ensuring consistent functionality across all platforms.
         </Text>
         
-        <Text my={'2'}>
+        <Text fontSize="lg" my={'2'} >
         <b>2. Improved Visibility for Coming Soon Movies:</b> Participants struggled to locate the "Coming Soon" movies within the app. To enhance user experience, we recommend introducing a dedicated "Coming Soon" section on the Home page and conducting additional research to determine optimal content placement.
         </Text>
         
-        <Text my={'2'}>
+        <Text fontSize="lg" my={'2'} >
         <b>3. Refined Search Functionality:</b> Users expressed a desire for more comprehensive search results. To meet this expectation, we suggest conducting further research to refine search functionality and align it with user needs and preferences.
         </Text>
     </Box>

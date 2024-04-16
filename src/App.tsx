@@ -53,12 +53,13 @@ const App = () => {
         zIndex="1" // Ensure text content is above the image
         >
           <VStack align="start" spacing={4}> {/* Align VStack content to the start, and provide spacing */}
-            <Text fontSize="lg">UX/UI Designer</Text>
+            <Text fontSize="xl">UX/UI Designer</Text>
             <Text fontSize="2xl" fontWeight="bold">Siobhan Carmody</Text>
-            <Text>
+            <Text fontSize="lg">
             Based in <b>Dallas, TX</b>, my career began in partner marketing within the mobile and ISP industry, yet my heart lies in UX design. This unique blend has fueled my passion for creating intuitive, human-centered designs that cater to the diverse needs of tech enthusiasts, professionals, and everyday users alike. My experience has honed my ability to communicate effectively and thrive in agile, collaborative settings, principles I carry into my UX/UI endeavors.            </Text>
             <Text
             my={'2'}
+            fontSize="lg"
             >
             As I navigate my transition to UX/UI design, I aim to merge marketing insights with a profound understanding of user needs,<b> striving to deliver solutions that not only meet expectations but also inspire.</b> My journey is about embracing new challenges and designing with purpose, aiming to impact lives across cultures through thoughtful design.
 

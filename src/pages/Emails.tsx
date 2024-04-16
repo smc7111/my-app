@@ -12,7 +12,6 @@ import ResultImage from '../assets/Email images/results section image.png';
 import EmailTimeline from '../assets/Email images/Email timeline.png';
 import DPAImage from '../assets/Email images/DPA clickable image.png';
 
-import LCM from '../assets/DPA images/Lifecycle email clickable image.png';
 import FandangoImage from '../assets/DPA images/Fandango clickable image 2.png';
 
 function Emails() {
@@ -102,7 +101,7 @@ function Emails() {
               Lifecycle Emails
               </Text>
             
-              <Text>
+              <Text fontSize="lg">
               UX/UI Design   |   Security   |   Responsive Design
               </Text>
              
@@ -160,10 +159,11 @@ function Emails() {
         </Box>
         <Box
         my={{sm: '2',md: '20'}}
+        paddingRight={{xl: '100'}}
         >
           <Text fontSize={responsiveFontSize} fontWeight="bold" >Problem</Text>
           <Divider borderColor="white" my={2} />
-          <Text>
+          <Text fontSize="lg">
           The primary challenge involved communicating the value of McAfee's security product to a new customer base through email campaigns, aligning with the latest branding. Compounding the complexity was the necessity to launch within a tight timeframe, ensuring these emails became an integral part of the onboarding experience for new customers. The task was further complicated by resource constraints, adding an additional layer of difficulty to the project.          </Text>
         </Box>
       </Grid>
@@ -177,12 +177,12 @@ function Emails() {
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
-      <Box order={{ md: 1 }}>
+      <Box order={{ md: 1 }} paddingLeft={{xl: '100'}} >
         <Text fontSize={responsiveFontSize} fontWeight="bold">Actions</Text>
         <Divider borderColor="white" my={2} />
-        <Text>Adopting a comprehensive strategy, I orchestrated a blend of design and content tactics to overhaul the email communication for McAfee's security product. Rooted in a user-centric design philosophy, each email was meticulously crafted not just to impart information but to actively empower and engage employee benefit customers. The selection of design elements was a thoughtful process, aimed at creating a visually captivating and cohesive narrative harmonizing with McAfee's brand identity.</Text>
+        <Text fontSize="lg">Adopting a comprehensive strategy, I orchestrated a blend of design and content tactics to overhaul the email communication for McAfee's security product. Rooted in a user-centric design philosophy, each email was meticulously crafted not just to impart information but to actively empower and engage employee benefit customers. The selection of design elements was a thoughtful process, aimed at creating a visually captivating and cohesive narrative harmonizing with McAfee's brand identity.</Text>
 
-        <Text my={8}>Significantly, the designs were conceived as evergreen, ensuring enduring relevance over time. It's noteworthy that initial designs incorporated blogs, but these were later omitted to prevent potential obsolescence concerns, aligning to maintain perpetual relevance without the need for frequent updates.</Text>     
+        <Text fontSize="lg" my={8}>Significantly, the designs were conceived as evergreen, ensuring enduring relevance over time. It's noteworthy that initial designs incorporated blogs, but these were later omitted to prevent potential obsolescence concerns, aligning to maintain perpetual relevance without the need for frequent updates.</Text>     
         </Box>
     </Grid>
 
@@ -193,10 +193,10 @@ function Emails() {
         <Image src={ResultImage} fit="cover" w="100%" h="auto" />
       </Box>
 
-      <Box>
+      <Box paddingLeft={{xl: '100'}} >
           <Text fontSize={responsiveFontSize} fontWeight="bold">Results</Text>
           <Divider borderColor="white" my={2} />
-          <Text>
+          <Text fontSize="lg">
           Leveraging comprehensive research rooted in McAfee's existing consumer base, we strategically designed and tailored the content of the emails. This approach enabled us to identify key features, pinpoint pain points, and ultimately boost both engagement and perceived value. Additionally, the email creation process drew insights from best-in-class practices across different facets of the McAfee business. The overarching goal was to align the messaging precisely with the audience's needs, ensuring a resonant and effective communication strategy.
           </Text>
           </Box>
@@ -220,12 +220,13 @@ function Emails() {
       p={8}
       zIndex="1" // Ensure text content is above the image
       my={{sm: '-10' , md: '-200'}}
+      paddingLeft={{xl: '100'}} paddingRight={{xl: '100'}}
     >
       <Text fontSize={responsiveFontSize} fontWeight="bold" mb={4}>
         Lessons Learned
       </Text>
 
-      <Text mb={4}>
+      <Text fontSize="lg" mb={4}>
       This project underscored the vital role of a user-focused design in email campaigns. Seamless collaboration across diverse teams, spanning time zones, proved critical. While maintaining clear communication and transparency was paramount, prioritizing the project amid competing initiatives posed challenges, emphasizing the need for continuous strategy evolution in the dynamic cybersecurity landscape.
       </Text>
     </Box>
