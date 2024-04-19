@@ -1,8 +1,10 @@
-import React from 'react';
+//import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import {
   ChakraProvider, Grid, Box, Text, Image, useDisclosure, extendTheme, Flex, Divider, Link, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, HStack, ModalFooter, VStack
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon, DownloadIcon } from '@chakra-ui/icons';
 
 // Import images
 import DPACoverphoto from '../assets/DPA images/DPA Cover photo.png';
@@ -22,6 +24,25 @@ function DPA() {
       goToPage('/')
   };
 
+
+ // Globally defined scrollToMiddle function
+const scrollToMiddle = () => {
+  const middle = document.documentElement.scrollHeight / 2 -40;
+  window.scrollTo({
+    top: middle,
+    behavior: 'smooth',
+  });
+};
+
+const goToWork = () => {
+  goToPage('/'); // Navigate to the homepage
+
+  // Use a timeout to ensure the page has a chance to load before scrolling
+  setTimeout(scrollToMiddle, 500); // Adjust the timeout as needed
+};
+
+  
+  
 
   const goToEmails = () => {
     goToPage('/emails');
@@ -47,34 +68,29 @@ function DPA() {
 
     // Responsive font sizes
     const responsiveFontSize = ['2xl', '3xl', '4xl', '5xl', '6xl'];
+  
 
     return (
     <ChakraProvider theme={theme}>
       {/* Navigation and Hero Section */}
-      <Grid
-       
-        templateColumns={{ sm: '1fr', md: '1fr 1fr' }}
-        templateRows="auto 1fr"
-      >
-
-        {/* Navigation and Hero Section */}
-        <Flex
-          as="nav"
-          gridRow="1 / 2"
-          gridColumn="1 / 2"
-          bg="#00A3FF"
-          color="white"
-          justifyContent="normal"
-          alignItems="center"
-          px={4}
-          py={3}
-          position="relative"
-        >
-
-          <Text cursor="pointer" onClick={homePageClick} fontSize="lg" fontWeight="bold" mr={4}>SC</Text>
-        
-
-        </Flex>
+      <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} templateRows="auto 1fr" h="100vh">
+  {/* Hero Section */}
+  <Flex
+    as="nav"
+    gridRow="1 / 2"
+    gridColumn="1 / 2"
+    bg="#00A3FF"
+    color="white"
+    justifyContent="space-between"
+    alignItems="center"
+    px={4}
+  >
+    {/* Flex container for SC and My Work to group them together */}
+    <Flex align="center">
+      <Link onClick={homePageClick} style={{ textDecoration: 'none' }} _hover={{ textDecoration: 'none' }} fontSize="lg" fontWeight="bold" mr={4}>SC</Link> {/* Added margin-right to space between SC and My Work */}
+      <Link onClick={goToWork}>my work</Link>
+    </Flex>
+  </Flex>
 
         {/* Text Section */}
         <Flex

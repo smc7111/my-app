@@ -3,6 +3,7 @@ import {
   ChakraProvider, Grid, Box, Text, Image, useDisclosure, extendTheme, Flex, Divider, Link, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, HStack, ModalFooter, VStack
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
+import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon, DownloadIcon } from '@chakra-ui/icons';
 
 // Import images
 import LifecycleCoverPhoto from '../assets/Email images/Lifecycle Cover photo.png';
@@ -22,6 +23,23 @@ function Emails() {
     const homePageClick = () => {
       goToPage('/')
   };
+
+   // Globally defined scrollToMiddle function
+const scrollToMiddle = () => {
+  const middle = document.documentElement.scrollHeight / 2 -40;
+  window.scrollTo({
+    top: middle,
+    behavior: 'smooth',
+  });
+};
+
+const goToWork = () => {
+  goToPage('/'); // Navigate to the homepage
+
+  // Use a timeout to ensure the page has a chance to load before scrolling
+  setTimeout(scrollToMiddle, 500); // Adjust the timeout as needed
+};
+
 
 
   const goToDPA = () => {
@@ -70,11 +88,11 @@ function Emails() {
           py={3}
           position="relative"
         >
-
-          <Text cursor="pointer" onClick={homePageClick} fontSize="lg" fontWeight="bold" mr={4}>SC</Text>
-        
-
-        </Flex>
+<Flex align="center">
+<Link onClick={homePageClick} style={{ textDecoration: 'none' }} _hover={{ textDecoration: 'none' }} fontSize="lg" fontWeight="bold" mr={4}>SC</Link> {/* Added margin-right to space between SC and My Work */}
+      <Link onClick={goToWork}>my work</Link>
+    </Flex>
+  </Flex>
 
         {/* Text Section */}
         <Flex
@@ -351,13 +369,13 @@ function Emails() {
       <Box color="black" textAlign="center" p={1}>
         <Button color="#333333" variant="solid" mt={4} _hover={{ textColor: 'white', bg: 'gray.700' }}>
           <Link textColor="#33333" href={`${process.env.PUBLIC_URL}/Resume-2.pdf`} isExternal download="Siobhans-Resume.pdf" _hover={{ textColor: 'white', textDecoration: 'none' }}>
-            Resume
+            Resume {<DownloadIcon />}
           </Link>
         </Button>
         <Button color="#333333" variant="solid" mt={4} ml={10} _hover={{ textColor: 'white', bg: 'gray.700' }}>
           <a href="https://www.linkedin.com/in/smc7111/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </Button>
-        <Text mt={4} ml={1}>Visually designed by Siobhan</Text>
+        <Text paddingTop={'4'} paddingBottom={'4'} mt={4} ml={1}>designed by siobhan</Text>
       </Box>
     </Flex>
   </Box>

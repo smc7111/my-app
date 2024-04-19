@@ -1,12 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ChakraProvider, Box, Text,  Button, Image, Flex,  IconButton,  useBreakpointValue, useColorModeValue, Divider, Link} from '@chakra-ui/react';
-import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon } from '@chakra-ui/icons';
+import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon, DownloadIcon } from '@chakra-ui/icons';
 import projectsData from '../assets/projects.json';
 import DPAImage from '../assets/Email images/DPA clickable image.png';
 import LCM from '../assets/DPA images/Lifecycle email clickable image.png';
 import FandangoImage from '../assets/DPA images/Fandango clickable image 2.png';
-
 interface ProjectShowcaseProps {
   title: string;
   description: string;
@@ -42,6 +41,16 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
     });
   };
 
+  const scrollToMiddle = () => {
+    // Calculate the middle of the page by dividing the total document height by 2
+    const middle = document.documentElement.scrollHeight / 2 -40;
+  
+    window.scrollTo({
+      top: middle, // Set the scroll position to the calculated middle
+      behavior: 'smooth', // Enable smooth scrolling
+    });
+  };
+
   const iconBgColor = useColorModeValue('#333333', 'white');
   const textColor = useColorModeValue('#333333', 'white');
 
@@ -59,6 +68,7 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
   const titleSize = useBreakpointValue({ base: 'xl', md: '4xl' });
   const descSize = useBreakpointValue({ base: 'sm', md: 'md' });
 
+
   return (
     <ChakraProvider>
       <Box
@@ -72,22 +82,7 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
         bg="#98B5D8"
       >
         <Flex direction="column" align="center">
-          <IconButton
-            aria-label="Go to top"
-            icon={<ArrowUpIcon />}
-            onClick={scrollToTop}
-            variant="solid"
-            size="lg"
-            color="white"
-            backgroundColor={iconBgColor}
-            _hover={{ bg: 'white', color: '#333333' }}
-            shadow="md"
-            mb={2}
-          />
-          <Text mb={20} fontSize={{ base: 'xl', md: '4xl' }} fontWeight="bold" color={textColor}>
-            The Person Behind the Projects
-          </Text>
-          <Text maxW="600px" fontWeight={'bold'} fontSize={{sm: 'large', md: 'x-large'}} mb={8} textColor="#333333">
+          <Text paddingTop={'28'} maxW="600px" fontWeight={'bold'} fontSize={{sm: 'large', md: 'x-large'}} mb={8} textColor="#333333">
               {title}
             </Text>
         </Flex>
@@ -129,10 +124,12 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
             fontSize="5xl"
           />
         </Flex>
+        
 
         <Button color="#333333" variant="solid" mt={4} mb={10} _hover={{ textColor: 'white', bg: '#333333' }} onClick={handleViewProjectClick}>
           View Project
         </Button>
+        <Link onClick={scrollToTop}>the person behind the project {<ArrowUpIcon/>}</Link>
       </Box>
 
       <footer>
@@ -143,7 +140,7 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
           <Box color="black" p={1} textAlign="center">
             <Button color="#333333" variant="solid" mt={20} _hover={{ textColor: 'white', bg: 'gray.700' }}>
             <Link textColor="#33333" href={`${process.env.PUBLIC_URL}/Resume-2.pdf`} isExternal download="Siobhans-Resume.pdf" _hover={{ textColor: 'white', textDecoration: 'none' }}>
-            Resume
+            Resume  {<DownloadIcon />}
           </Link>
             </Button>
             <Button color="#333333" variant="solid" mt={20} ml={10} _hover={{ textColor: 'white', bg: 'gray.700' }}>
@@ -151,8 +148,8 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
                 LinkedIn
               </a>
             </Button>
-            <Text mt={4} ml={1}>
-              Visually designed by Siobhan
+            <Text paddingTop={'4'} paddingBottom={'4'} mt={4} ml={1}>
+              designed by siobhan
             </Text>
           </Box>
         </Flex>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Divider, VStack, Button, Link, Text, HStack, Center, Flex } from '@chakra-ui/react';
+import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon, DownloadIcon } from '@chakra-ui/icons';
 
 const Footer = () => {
   return (
@@ -10,13 +11,13 @@ const Footer = () => {
       <Box color="black" textAlign="center" p={1}>
         <Button color="#333333" variant="solid" mt={4} _hover={{ textColor: 'white', bg: 'gray.700' }}>
           <Link textColor="#33333" href={`${process.env.PUBLIC_URL}/Resume-2.pdf`} isExternal download="Siobhans-Resume.pdf" _hover={{ textColor: 'white', textDecoration: 'none' }}>
-            Resume
+            Resume {<DownloadIcon/>}
           </Link>
         </Button>
         <Button color="#333333" variant="solid" mt={4} ml={10} _hover={{ textColor: 'white', bg: 'gray.700' }}>
           <a href="https://www.linkedin.com/in/smc7111/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </Button>
-        <Text mt={4} ml={1}>Visually designed by Siobhan</Text>
+        <Text paddingTop={'4'} paddingBottom={'4'} mt={4} ml={1}>designed by siobhan</Text>
       </Box>
     </Flex>
   </Box>
