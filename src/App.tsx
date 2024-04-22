@@ -37,7 +37,7 @@ const App = () => {
 
   const scrollToMiddle = () => {
     // Calculate the middle of the page by dividing the total document height by 2
-    const middle = document.documentElement.scrollHeight / 2 -40;
+    const middle = document.documentElement.scrollHeight / 2 -90;
   
     window.scrollTo({
       top: middle, // Set the scroll position to the calculated middle
@@ -61,11 +61,11 @@ const App = () => {
     px={4}
   >
     {/* Flex container for SC and My Work to group them together */}
-    <Flex align="center">
+    <Flex align="center" paddingTop={'6'}>
     <Link style={{ textDecoration: 'none' }} _hover={{ textDecoration: 'none' }} fontSize="lg" fontWeight="bold" mr={4}>SC</Link> {/* Added margin-right to space between SC and My Work */}
       <Link className='color-00A3FF' onClick={scrollToMiddle}>my work</Link>
     </Flex>
-    <Link className='color-00A3FF' onClick={onOpen}>my background</Link>
+    <Link paddingTop={'6'} className='color-00A3FF' onClick={onOpen}>my background</Link>
   </Flex>
 
         <Flex

@@ -27,7 +27,7 @@ function DPA() {
 
  // Globally defined scrollToMiddle function
 const scrollToMiddle = () => {
-  const middle = document.documentElement.scrollHeight / 2 -40;
+  const middle = document.documentElement.scrollHeight / 2 -90;
   window.scrollTo({
     top: middle,
     behavior: 'smooth',
@@ -86,7 +86,7 @@ const goToWork = () => {
     px={4}
   >
     {/* Flex container for SC and My Work to group them together */}
-    <Flex align="center">
+    <Flex align="center" paddingTop={'6'}>
       <Link onClick={homePageClick} style={{ textDecoration: 'none' }} _hover={{ textDecoration: 'none' }} fontSize="lg" fontWeight="bold" mr={4}>SC</Link> {/* Added margin-right to space between SC and My Work */}
       <Link onClick={goToWork}>my work</Link>
     </Flex>

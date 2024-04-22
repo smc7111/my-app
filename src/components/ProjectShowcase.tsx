@@ -43,7 +43,7 @@ const ProjectShowcase: React.FC<ProjectShowcaseProps> = ({
 
   const scrollToMiddle = () => {
     // Calculate the middle of the page by dividing the total document height by 2
-    const middle = document.documentElement.scrollHeight / 2 -40;
+    const middle = document.documentElement.scrollHeight / 2 -90;
   
     window.scrollTo({
       top: middle, // Set the scroll position to the calculated middle
