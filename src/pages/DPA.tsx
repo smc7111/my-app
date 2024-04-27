@@ -114,8 +114,9 @@ const goToWork = () => {
             <Text
             fontWeight={'bold'}
             fontSize={responsiveFontSize}>
-              ConnectPaws Mobile App
-              </Text>
+                ConnectPaws Mobile App
+                </Text>
+              
             
               <Text fontSize="lg" paddingLeft={2}>
               UX/UI Design   |   Non-Profit   |   Prototype
@@ -160,7 +161,10 @@ const goToWork = () => {
           >Problem</Text>
           <Divider borderColor="white" />
           <Text fontSize="lg">
-            Dallas Pets Alive (DPA), a non-profit foster organization primarily operated by dedicated volunteers, faces a communication gap as they lack a dedicated mobile app to engage with their community. Relying on emails and social media platforms like Facebook, the organization seeks an efficient solution. My prototype serves as a centralized hub, fostering seamless connections among volunteers and leadership, facilitating resource-sharing, and coordinating upcoming events.
+          Dallas Pets Alive (DPA), a non-profit organization run predominantly by passionate volunteers, is grappling with a communication shortfall due to the absence of a dedicated mobile application. Operating mainly through emails, Google Drive, and social media channels like Facebook, the organization is in dire need of a streamlined solution. My prototype aims to bridge this gap by serving as a central platform, fostering seamless interaction between volunteers and leadership, facilitating the sharing of resources, and coordinating upcoming events.
+          </Text>
+          <Text paddingTop={'4'} fontSize="lg" fontStyle={'italic'}>
+          How might I design an intuitive platform for Dallas Pets Alive (DPA) for volunteers and leadership to easily access and share information, engage with the community, and coordinate efforts, all from one app?
           </Text>
         </Box>
       </Grid>
@@ -170,14 +174,19 @@ const goToWork = () => {
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white">
       {/* Image Box - Ensure this is first in the source order */}
       <Box order={{ md: 2 }}>
-        <Image my={{sm: '-170', md: '-250', lg:'-400', xl:'-350', '2xl':'-650'}} src={ActionImage} fit="cover" w="100%" h="auto" />
+        <Image my={{sm: '-170', md: '-250', lg:'-400', xl:'-350', '2xl':'-550'}} src={ActionImage} fit="cover" w="100%" h="auto" />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
-      <Box my={{sm:'100', md: '-150' }} paddingLeft={{xl: '100'}}>
+      <Box my={{sm:'100', md: '-50' }} paddingLeft={{xl: '100'}}>
         <Text fontSize={responsiveFontSize} fontWeight="bold">Actions</Text>
         <Divider borderColor="white" />
-        <Text fontSize="lg">Drawing inspiration from established social media platforms like LinkedIn, the DPA app aligns with familiar structures. Despite the initial focus on the North Dallas area, the geographically dispersed nature of volunteers across the United States influenced the app's inclusive design. Although constrained by time, further user research and interviews could refine its features and functionality.</Text>
+        <Text fontSize="lg">
+        Drawing inspiration from established social media platforms, the DPA app aligns with familiar structures. Several peer reviews helped improve each iteration such as icon placement, informational architecture, and flow of the prototype.
+        </Text>
+        <Text fontSize="lg" paddingTop={'4'}>
+        While initially the focus was for Dallas-based users, research showed that a small percentage of volunteers are dispersed throughout the United States, which contributed to the overall inclusivity and design similar to LinkedIn. Although the overall project was constrained by time, further user research and user interviews could refine its features and functionality.
+        </Text>
       </Box>
     </Grid>
 
@@ -197,11 +206,10 @@ const goToWork = () => {
       my={{sm: '40' , md: '20'}}
       paddingRight={{xl: '100'}}
       >
-        <Text fontSize={responsiveFontSize} fontWeight="bold">Results</Text>
+        <Text fontSize={responsiveFontSize} fontWeight="bold">Lessons Learned</Text>
         <Divider borderColor="white" />
         <Text fontSize="lg">
-          While the current iteration remains a prototype, it stands poised for further development. Rigorous feedback loops, incorporating insights from multiple peer evaluations, have enhanced the app's user-centric attributes. Iterative adjustments have not only improved its usability but positioned it for future refinement.
-        </Text>
+        This project illuminated the intricate and iterative nature of the design process, offering firsthand experience in navigating the complexities of application development and wireframing. The reliance on existing platforms, such as LinkedIn, underscored the need for constant reference and awareness of design nuances. It reinforced the dichotomy of user experience – seamless design often goes unnoticed, while flaws stand out glaringly. This journey provided profound insights into the art of crafting a user-friendly mobile application and the importance of continuous improvement.        </Text>
       </Box>
     </Grid>
 
@@ -224,13 +232,13 @@ const goToWork = () => {
       my={{sm: '-200' , md: '-40'}}
     >
       <Text fontSize={responsiveFontSize} fontWeight="bold" mb={4}>
-        Lessons Learned
+        Next Steps
       </Text>
 
       <Text fontSize="lg" mb={4} paddingLeft={{xl: '100'}} paddingRight={{xl: '100'}}>
-      This project illuminated the intricate and iterative nature of the design process, offering firsthand experience in navigating the complexities of application development. The reliance on existing platforms, such as LinkedIn, underscored the need for constant reference and awareness of design nuances. It reinforced the dichotomy of user experience – seamless design often goes unnoticed, while flaws stand out glaringly. This journey provided profound insights into the art of crafting user-friendly applications and the importance of continuous improvement.
+      While the current iteration remains a prototype, it stands poised for further development. Rigorous feedback loops, incorporating insights from multiple peer evaluations, have enhanced the app's user-centric attributes. Iterative adjustments have not only improved its usability but positioned it for future refinement.    
       </Text>
-    </Box>
+      </Box>
 
     {/* Image Section (Mountains Picture) */}
     <Box mt={8}

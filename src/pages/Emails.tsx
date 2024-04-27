@@ -182,7 +182,11 @@ const goToWork = () => {
           <Text fontSize={responsiveFontSize} fontWeight="bold" >Problem</Text>
           <Divider borderColor="white" my={2} />
           <Text fontSize="lg">
-          The primary challenge involved communicating the value of McAfee's security product to a new customer base through email campaigns, aligning with the latest branding. Compounding the complexity was the necessity to launch within a tight timeframe, ensuring these emails became an integral part of the onboarding experience for new customers. The task was further complicated by resource constraints, adding an additional layer of difficulty to the project.          </Text>
+          McAfee is in the process of launching a set of lifecycle emails to enhance the onboarding experience for a new customer segment. However, due to the uniqueness of this audience, there is no existing communications that would properly and effectively address them. Despite time constraints and resource limitations, the focus remained on crafting a solution that prioritized the user experience, aiming to foster meaningful engagement with McAfee's security product.
+          </Text>
+          <Text fontSize="lg" paddingTop='4' fontStyle={'italic'}>
+          How might we launch compelling email campaigns for McAfee's security product that effectively communicate its value to a new customer base, while also increasing engagement and awareness, all within a tight timeframe and with limited resources?
+          </Text>
         </Box>
       </Grid>
 
@@ -190,23 +194,27 @@ const goToWork = () => {
       {/* Actions Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white">
       {/* Image Box - Ensure this is first in the source order */}
-      <Box order={{ md: 2 }} my={{sm: '-15' , md: '-155'}}>
-        <Image  src={ActionImage} fit="cover" w="100%" h="auto" />
+      <Box order={{ md: 2 }} my={{sm: '-15' , md: '-55'}}>
+        <Image  src={ActionImage} fit="cover" w="70%" h="auto" />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
       <Box order={{ md: 1 }} paddingLeft={{xl: '100'}} >
         <Text fontSize={responsiveFontSize} fontWeight="bold">Actions</Text>
         <Divider borderColor="white" my={2} />
-        <Text fontSize="lg">Adopting a comprehensive strategy, I orchestrated a blend of design and content tactics to overhaul the email communication for McAfee's security product. Rooted in a user-centric design philosophy, each email was meticulously crafted not just to impart information but to actively empower and engage employee benefit customers. The selection of design elements was a thoughtful process, aimed at creating a visually captivating and cohesive narrative harmonizing with McAfee's brand identity.</Text>
+        <Text fontSize="lg">
+        Utilizing confidential consumer research to implement a user-centric design philosophy, each email was crafted not just to impart information but to actively empower and engage these customers. The selection of design elements was a thoughtful process, aimed at creating a visually captivating and cohesive narrative harmonizing with McAfee's brand identitythat was visually appealing on desktop and mobile devices.          
+        </Text>
 
-        <Text fontSize="lg" my={8}>Significantly, the designs were conceived as evergreen, ensuring enduring relevance over time. It's noteworthy that initial designs incorporated blogs, but these were later omitted to prevent potential obsolescence concerns, aligning to maintain perpetual relevance without the need for frequent updates.</Text>     
+        <Text fontSize="lg" my={8}>
+        The first iteration incorporated educational blogs relevant to each email’s theme, but these were later omitted to prevent potential obsolescence concerns. By keeping the email content evergreen, I was able to ensure timeless relevance, optimize my resources, and keep within my tight timeline.        
+        </Text>
         </Box>
     </Grid>
 
       {/* Results Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" alignItems="start">
-      <Box order={{ md: 2 }} my={{sm: '-16' , md: '-15'}}
+      <Box order={{ md: 2 }} my={{sm: '-15' , md: '45'}}
         >
         <Image src={ResultImage} fit="cover" w="100%" h="auto" />
       </Box>
@@ -215,7 +223,7 @@ const goToWork = () => {
           <Text fontSize={responsiveFontSize} fontWeight="bold">Results</Text>
           <Divider borderColor="white" my={2} />
           <Text fontSize="lg">
-          Leveraging comprehensive research rooted in McAfee's existing consumer base, we strategically designed and tailored the content of the emails. This approach enabled us to identify key features, pinpoint pain points, and ultimately boost both engagement and perceived value. Additionally, the email creation process drew insights from best-in-class practices across different facets of the McAfee business. The overarching goal was to align the messaging precisely with the audience's needs, ensuring a resonant and effective communication strategy.
+          The overarching goal was to align the messaging precisely with the audience's needs, ensuring a resonant and effective communication strategy to increase life time value. The execution of these responsive and strategically designed emails ultimately boosted customer engagement and perceived value. This was made clear in the monthly engagement reporting, retention rates, and Net Promotor Score of the audience.          
           </Text>
           </Box>
 
@@ -245,8 +253,7 @@ const goToWork = () => {
       </Text>
 
       <Text fontSize="lg" mb={4}>
-      This project underscored the vital role of a user-focused design in email campaigns. Seamless collaboration across diverse teams, spanning time zones, proved critical. While maintaining clear communication and transparency was paramount, prioritizing the project amid competing initiatives posed challenges, emphasizing the need for continuous strategy evolution in the dynamic cybersecurity landscape.
-      </Text>
+      This project underscored the vital role of a user-focused design in email campaigns. Seamless collaboration across diverse teams, spanning time zones, proved critical. While maintaining clear communication and transparency was paramount, prioritizing the project amid competing initiatives posed challenges, emphasizing the need for continuous strategy evolution and flexibility.      </Text>
     </Box>
 
     {/* Image Section (Zoom in Picture) */}

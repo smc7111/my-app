@@ -178,29 +178,60 @@ const goToWork = () => {
           <Image src={PersonIcon} fit="cover" w={{sm: '100%', md: '70%'}} h="auto" />
         </Box>
         <Box
-        my={{sm: '-5' , md: '180'}}
+        my={{sm: '-5' , md: '50'}}
         paddingRight={{xl: '100'}}
         >
           <Text fontSize={responsiveFontSize} fontWeight="bold">Problem</Text>
           <Divider borderColor="white" my={2} />
           <Text fontSize="lg">
-          Users face obstacles when using the Fandango app to access movie details and buy tickets, impeding their experience and potentially leading to frustration or app abandonment. The goal of this project was to assess the app's functionality in facilitating these tasks, aiming to identify usability issues and guide future improvements for a smoother user experience.          </Text>
+          Users encounter challenges when navigating the Fandango app to gather movie information and purchase tickets. This hinders their overall experience and can result in frustration or app abandonment. The objective of this initiative was to evaluate the app's effectiveness regarding these key actions, with the aim of pinpointing points of friction and providing insights for enhancing the user experience in future releases.
+          </Text>
+          <Text fontSize="lg" paddingTop='4' fontStyle={'italic'}>
+          How might we analyze the functionality of the Fandango app in aiding users to access movie information and purchase tickets, identifying usability issues, and offering guidance for enhancing the user experience to ensure smoother interactions?
+          </Text>
         </Box>
       </Grid>
 
+      <Box
+  bg="#98B5D8"
+  color="white"
+  p={8}
+  zIndex="1" // Ensure text content is above the image
+  paddingBottom={'150'}
+  mx="auto" // Center horizontally
+  display="flex" flexDirection="column" justifyContent="center" alignItems="center"
+>
+  <Text fontSize={responsiveFontSize} fontWeight="bold">Research Goals</Text>
 
-      {/* Actions Section */}
+  <ul>
+    <li>
+      <Text fontSize="xl" my={'2'}>Understand expectations of functionality and use of movie ticket apps</Text>
+    </li>
+    <li>
+      <Text fontSize="xl" my={'2'}>Identify frustrations when navigating the Fandango app</Text>
+    </li>
+    <li>
+      <Text fontSize="xl" my={'2'}>Analyze and synthesize findings into a comprehensive report</Text>
+    </li>
+  </ul>
+</Box>
+
+
+
+
+      {/* Usability Testing Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" my={{sm: '0' , md: '-20'}}>
       {/* Image Box - Ensure this is first in the source order */}
       <Box order={{ md: 2 }}>
-        <Image my={{sm: '0' , md: '12'}} marginLeft={{md:'100'}} src={InterviewPics} fit="cover" h="auto" w={{sm: '90%%', md: '70%'}} />
+        <Image my={{sm: '-100' , md: '12'}} marginLeft={{md:'100'}} src={InterviewPics} fit="cover" h="auto" w={{sm: '90%%', md: '70%'}} />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
       <Box order={{ md: 1 }}
       paddingLeft={{xl: '100'}}
-      paddingBottom={{md: '100', lg:'100',xl:'100'}}>
-        <Text fontSize={responsiveFontSize} fontWeight="bold" >Actions</Text>
+      paddingBottom={{md: '100', lg:'100',xl:'100'}}
+      my={{sm: '200' , md: '12'}}>
+        <Text fontSize={responsiveFontSize} fontWeight="bold" >Usability testing</Text>
         <Divider borderColor="white" />
         <Text fontSize="lg">
         My team of five UX researchers, including myself, conducted <b>12 moderated usability studies</b> to assess user interactions with the Fandango app. We assigned participants <b>three typical tasks</b> mirroring real-world scenarios:
@@ -211,6 +242,11 @@ const goToWork = () => {
 
             <Text fontSize="lg"> We recruited participants meeting specific criteria via email and text, ensuring a diverse and representative participant pool. Each session was moderated and recorded either in-person or virtually, with participants utilizing their mobile phones to replicate real-world usage scenarios. 
             </Text>
+
+            <Text fontStyle={'italic'} paddingTop='4' fontSize="lg">
+            “Figuring out where to find the coming soon section [was the hardest part of the experience] because I kinda expected it to be at home and it wasn't there.”
+            </Text>
+            <Text>- Participant</Text>
       </Box>
     </Grid>
 
@@ -250,6 +286,22 @@ const goToWork = () => {
         <Text fontSize="lg" my={'2'} >
         <b>3. Refined Search Functionality:</b> Users expressed a desire for more comprehensive search results. To meet this expectation, we suggest conducting further research to refine search functionality and align it with user needs and preferences.
         </Text>
+
+        <div style={{ textAlign: 'center' }}>
+  <Button 
+    verticalAlign="center" 
+    color="#333333" 
+    variant="solid" 
+    mt={20} 
+    ml={10} 
+    _hover={{ textColor: 'white', bg: 'gray.700' }}
+  >
+    <a href="https://docs.google.com/presentation/d/1m28awh6ZcsTpjTAGv5-1lCKsnkpDIkJp/edit?usp=sharing&ouid=102284223751054415050&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+      View final Fandango report
+    </a>
+  </Button>
+</div>
+
     </Box>
   </Flex>
 
