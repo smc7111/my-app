@@ -166,6 +166,7 @@ const goToWork = () => {
             width="100%"
             height="100%"
             objectFit="cover" 
+            alt="Fandango cover image"
           />
         </Box>
       </Grid>
@@ -175,7 +176,7 @@ const goToWork = () => {
         <Box
         my={{sm: '-5' , md: '-15'}}
         >
-          <Image src={PersonIcon} fit="cover" w={{sm: '100%', md: '70%'}} h="auto" />
+          <Image src={PersonIcon} fit="cover" w={{sm: '100%', md: '70%'}} h="auto" alt="girl on tablet standing in front of monitor with graph displayed on it" />
         </Box>
         <Box
         my={{sm: '-5' , md: '50'}}
@@ -223,7 +224,7 @@ const goToWork = () => {
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" my={{sm: '0' , md: '-20'}}>
       {/* Image Box - Ensure this is first in the source order */}
       <Box order={{ md: 2 }}>
-        <Image my={{sm: '-100' , md: '12'}} marginLeft={{md:'100'}} src={InterviewPics} fit="cover" h="auto" w={{sm: '90%%', md: '70%'}} />
+        <Image my={{sm: '-100' , md: '12'}} marginLeft={{md:'100'}} src={InterviewPics} fit="cover" h="auto" w={{sm: '90%%', md: '70%'}} alt="three images overlapping: two are of interviewees and one is of someone on the Fandango mobile app" />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
@@ -325,6 +326,7 @@ const goToWork = () => {
         height="auto" // Make the height auto to maintain aspect ratio
         objectFit="cover"
         my={{sm: '-10' , md: '10'}}
+        alt="divider mountain-like image with a reflection"
       />
     </Box>
   </Flex>
@@ -378,6 +380,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="ConnectPaws Mobile App clickable image"
         />
         <Text
           mt={4}
@@ -400,6 +403,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="Lifecycle Emails clickable image"
         />
         <Text
           mt={4}

@@ -165,7 +165,8 @@ const goToWork = () => {
             position="absolute"
             width="100%"
             height="100%"
-            objectFit="cover" 
+            objectFit="cover"
+            alt="cover image of lifecycle emails" 
           />
         </Box>
       </Grid>
@@ -173,7 +174,7 @@ const goToWork = () => {
       {/* Problem Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" alignItems="start">
         <Box>
-          <Image my={{sm:'0', md: '-10'}} src={ProblemImage} fit="cover" w="100%" h="auto" />
+          <Image my={{sm:'0', md: '-10'}} alt="depciting responsive design with a desktop and mobile version of the same email" src={ProblemImage} fit="cover" w="100%" h="auto" />
         </Box>
         <Box
         my={{sm: '2',md: '20'}}
@@ -194,8 +195,8 @@ const goToWork = () => {
       {/* Actions Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white">
       {/* Image Box - Ensure this is first in the source order */}
-      <Box order={{ md: 2 }} my={{sm: '-15' , md: '-55'}}>
-        <Image  src={ActionImage} fit="cover" w="70%" h="auto" />
+      <Box order={{ md: 2 }} paddingLeft={20} my={{sm: '-15' , md: '-55',lg:'0', xl:'-75', '2xl':'-300'}}>
+        <Image alt="blog version email vs. evergreen version email"  src={ActionImage} fit="cover" w="70%" h="auto" />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
@@ -214,12 +215,9 @@ const goToWork = () => {
 
       {/* Results Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" alignItems="start">
-      <Box order={{ md: 2 }} my={{sm: '-15' , md: '45'}}
-        >
-        <Image src={ResultImage} fit="cover" w="100%" h="auto" />
-      </Box>
 
-      <Box paddingLeft={{xl: '100'}} >
+      <Box paddingLeft={{xl: '100'}}
+      my={{sm: '-15' , md: '-55',lg:'0', xl:'-75', '2xl':'0'}} >
           <Text fontSize={responsiveFontSize} fontWeight="bold">Results</Text>
           <Divider borderColor="white" my={2} />
           <Text fontSize="lg">
@@ -245,7 +243,7 @@ const goToWork = () => {
       color="white"
       p={8}
       zIndex="1" // Ensure text content is above the image
-      my={{sm: '-10' , md: '-200'}}
+      my={{sm: '-10' , md: '100', lg:'10'}}
       paddingLeft={{xl: '100'}} paddingRight={{xl: '100'}}
     >
       <Text fontSize={responsiveFontSize} fontWeight="bold" mb={4}>
@@ -257,7 +255,9 @@ const goToWork = () => {
     </Box>
 
     {/* Image Section (Zoom in Picture) */}
-    <Box mt={{sm: '8', md: '60' }} onClick={onOpen} cursor="zoom-in">
+    <Box 
+    
+    mt={{sm: '28', md: '0' }} onClick={onOpen} cursor="zoom-in">
         <Image
           src={EmailTimeline}
           width="100%"
@@ -331,6 +331,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="ConnectPaws clickable image"
         />
         <Text
           mt={4}
@@ -353,6 +354,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="Fandango clickable image"
         />
         <Text
           mt={4}

@@ -10,13 +10,14 @@ import { ChevronLeftIcon, ChevronRightIcon, ArrowUpIcon, DownloadIcon } from '@c
 import DPACoverphoto from '../assets/DPA images/DPA Cover photo.png';
 import PhoneImages from '../assets/DPA images/Phone images.png';
 import ActionImage from '../assets/DPA images/action section image.png';
+import Personas from '../assets/DPA images/DPA_Personas.png';
 import Mountains from '../assets/DPA images/Mountains.png';
 import LCM from '../assets/DPA images/Lifecycle email clickable image.png';
 import FandangoImage from '../assets/DPA images/Fandango clickable image 2.png';
 import Footer from '../components/Footer';
 
 function DPA() {
-    const { isOpen, onClose } = useDisclosure();
+    const { isOpen, onOpen, onClose } = useDisclosure();
     const navigate = useNavigate();
 
     const goToPage = useNavigate();
@@ -146,6 +147,7 @@ const goToWork = () => {
             width="100%"
             height="100%"
             objectFit="cover" 
+            alt="cover image of ConnectPaws Mobile App" 
           />
         </Box>
       </Grid>
@@ -153,7 +155,7 @@ const goToWork = () => {
       {/* Problem Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white" alignItems="start">
         <Box>
-          <Image my={{sm: '-20' , md: '-20'}} src={PhoneImages} fit="cover" w="100%" h="auto" />
+          <Image my={{sm: '-20' , md: '-20'}} alt="cover photo of app showing messages screen" src={PhoneImages} fit="cover" w="100%" h="auto" />
         </Box>
         <Box 
         my={{sm: '8' , md: '20'}} paddingRight={{xl: '100'}}>
@@ -161,11 +163,10 @@ const goToWork = () => {
           >Problem</Text>
           <Divider borderColor="white" />
           <Text fontSize="lg">
-          Dallas Pets Alive (DPA), a non-profit organization run predominantly by passionate volunteers, is grappling with a communication shortfall due to the absence of a dedicated mobile application. Operating mainly through emails, Google Drive, and social media channels like Facebook, the organization is in dire need of a streamlined solution. My prototype aims to bridge this gap by serving as a central platform, fostering seamless interaction between volunteers and leadership, facilitating the sharing of resources, and coordinating upcoming events.
+          Dallas Pets Alive (DPA), a non-profit organization run predominantly by passionate volunteers, is grappling with a communication shortfall due to the absence of a dedicated mobile application. Operating mainly through emails, Google Drive, and social media channels like Facebook, the organization is in dire need of a streamlined solution. My prototype aims to bridge this gap by serving as a central platform—fostering seamless interaction between volunteers and leadership, facilitating the sharing of resources, and coordinating upcoming events.          
           </Text>
           <Text paddingTop={'4'} fontSize="lg" fontStyle={'italic'}>
-          How might I design an intuitive platform for Dallas Pets Alive (DPA) for volunteers and leadership to easily access and share information, engage with the community, and coordinate efforts, all from one app?
-          </Text>
+          How might I design an intuitive platform for DPA volunteers and leadership to easily access and share information, engage with the community, and coordinate efforts—all from one app?          </Text>
         </Box>
       </Grid>
 
@@ -174,7 +175,8 @@ const goToWork = () => {
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white">
       {/* Image Box - Ensure this is first in the source order */}
       <Box order={{ md: 2 }}>
-        <Image my={{sm: '-170', md: '-250', lg:'-400', xl:'-350', '2xl':'-550'}} src={ActionImage} fit="cover" w="100%" h="auto" />
+        <Image my={{sm: '0', md: '0', lg:'-400', xl:'-100', '2xl':'-300'}} 
+        src={Personas} objectFit="cover" width="100%" height="auto" alt="primary and secondary personas" />
       </Box>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
@@ -182,11 +184,11 @@ const goToWork = () => {
         <Text fontSize={responsiveFontSize} fontWeight="bold">Actions</Text>
         <Divider borderColor="white" />
         <Text fontSize="lg">
-        Drawing inspiration from established social media platforms, the DPA app aligns with familiar structures. Several peer reviews helped improve each iteration such as icon placement, informational architecture, and flow of the prototype.
+        Drawing inspiration from established social media platforms, the DPA app aligns with familiar structures to create an intuitive user experience. Informed by several peer reviews, each iteration of the app saw improvements in icon placement, informational architecture, and the overall flow of the prototype. This iterative design process was enriched by incorporating feedback from distinct user personas such as Sam, a fostering volunteer, and Joe, a leadership employee, ensuring the app meets diverse needs.        
         </Text>
         <Text fontSize="lg" paddingTop={'4'}>
-        While initially the focus was for Dallas-based users, research showed that a small percentage of volunteers are dispersed throughout the United States, which contributed to the overall inclusivity and design similar to LinkedIn. Although the overall project was constrained by time, further user research and user interviews could refine its features and functionality.
-        </Text>
+        While initially targeting Dallas-based users, research revealed that a small but significant number of volunteers are dispersed throughout the United States. This discovery prompted a more inclusive design approach, mirroring user-friendly aspects of popular mobile apps like LinkedIn and Canvas Student. Despite time constraints limiting the scope of our initial research phase, further user research and interviews, particularly with users like Sam and Joe, could significantly refine the app's features and functionality.       
+         </Text>
       </Box>
     </Grid>
 
@@ -203,7 +205,7 @@ const goToWork = () => {
 </Box>
 
       <Box
-      my={{sm: '40' , md: '20'}}
+      my={{sm: '40' , md: '250'}}
       paddingRight={{xl: '100'}}
       >
         <Text fontSize={responsiveFontSize} fontWeight="bold">Lessons Learned</Text>
@@ -249,6 +251,7 @@ const goToWork = () => {
         width="100%"
         height="auto" // Make the height auto to maintain aspect ratio
         objectFit="cover"
+        alt="divider mountain-like graphic"
       />
     </Box>
   </Flex>
@@ -304,6 +307,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="Lifecycle Emails clickable image"
         />
         <Text
           mt={4}
@@ -326,6 +330,7 @@ const goToWork = () => {
           height="auto" // Make the height auto to maintain aspect ratio
           objectFit="cover"
           cursor="pointer"
+          alt="Fandango clickable image"
         />
         <Text
           mt={4}
