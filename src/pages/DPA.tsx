@@ -174,10 +174,22 @@ const goToWork = () => {
       {/* Actions Section */}
       <Grid templateColumns={{ sm: '1fr', md: '1fr 1fr' }} p={8} bg="#98B5D8" color="white">
       {/* Image Box - Ensure this is first in the source order */}
-      <Box order={{ md: 2 }}>
+      <Box order={{ md: 2 }}  onClick={onOpen} cursor="zoom-in">
         <Image my={{sm: '0', md: '0', lg:'-400', xl:'-100', '2xl':'-300'}} 
         src={Personas} objectFit="cover" width="100%" height="auto" alt="primary and secondary personas" />
       </Box>
+
+      <Modal isOpen={isOpen} size="full" onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent bg="#98B5D8">
+          <ModalCloseButton />
+          <ModalBody>
+            <Flex  justify="center" align="center" h="100%">
+              <Image src={Personas} maxW="100%" maxH="100%" />
+            </Flex>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
 
       {/* Text Box - Adjust the order for desktop view to bring it to the left */}
       <Box my={{sm:'100', md: '-50' }} paddingLeft={{xl: '100'}}>
@@ -355,27 +367,6 @@ const goToWork = () => {
 
 </Grid>
 
-
-<Modal isOpen={isOpen} onClose={onClose} size={'xs'}>
-                <ModalOverlay />
-                <ModalContent>
-                  <ModalHeader>
-                    <Flex justifyContent="center" width="full">
-                    </Flex>
-                  </ModalHeader>
-                  <ModalCloseButton />
-                  <ModalBody>
-                    <VStack divider={<Divider borderColor="gray.200" />} spacing={8}>
-                      
-                        ))
-                      
-                    </VStack>
-                  </ModalBody>
-                  <ModalFooter>
-                      
-                  </ModalFooter>
-                </ModalContent>
-              </Modal>
     </ChakraProvider>
     );
 }
